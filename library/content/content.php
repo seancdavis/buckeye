@@ -4,7 +4,7 @@
 ------------------------------------------------------------------------ */
 add_action( 'build_content', 'core_content_builder', 10, 2 );
 
-function core_content_builder($page, $plugin) {
+function core_content_builder($page, $plugin = '') {
 	
 	get_header();
 	if( is_front_page() ) {
